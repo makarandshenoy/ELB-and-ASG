@@ -19,7 +19,7 @@ resource "aws_elb" "ClassicELB" {
     interval            = 30
   }
 
-  instances                   = ["${data.aws_instances.ASGInstances.ids}"]
+  
   cross_zone_load_balancing   = false
   idle_timeout                = 400
   connection_draining         = true
